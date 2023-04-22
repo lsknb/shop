@@ -35,7 +35,7 @@
 </template>
 
 <script>
-// import { Application } from './asset/runtime.js';
+// import { Application } from './asset/runtime';
 // const canvas = document.getElementById('canvas3d')
 // const app = new Application(canvas);
 // app.load('./asset/scene.splinecode')
