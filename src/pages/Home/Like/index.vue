@@ -133,7 +133,7 @@ export default {
                             }
 
                             h3 {
-                                color: #df3033;
+                                color: #fdca76;
                                 font-size: 20px;
                                 line-height: 30px;
                                 margin: 9px 0;

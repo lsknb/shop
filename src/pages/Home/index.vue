@@ -2,9 +2,9 @@
   <div>
     <TypeNav />
     <ListContainer />
-    <!-- <Recommend />
+    <Recommend />
     <Rank/>
-    <Like/> -->
+    <Like/>
     <Floor v-for="floor in floorList" :key="floor.id" :list="floor"></Floor>
     <Brand/>
   </div>

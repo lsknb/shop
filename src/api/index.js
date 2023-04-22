@@ -9,4 +9,7 @@ export const reqCategoryList =()=>requests({url:'/product/getBaseCategoryList',m
 export const reqGetBannerList=()=>mockRequests.get('/banner');
 export const reqFloorList=()=>mockRequests.get('/floor');
 
-export const reqgetSearchInfo =(parmas)=>requests({url:'/list',method:'post',data:parmas});
+export const reqGetSearchInfo =(params)=>requests({url:'/list',method:'post',data:params});
+export const reqGetCode=(phone)=>requests({url:'/user/passport/sendCode/${phone}',methods:'get'})
+export const reqUserRegister=(data)=>requests({url:'/user/passport/register',data,methods:'post'})
+export const reqUserLogin=(data)=>requests({url:'/user/passport/login',data,methods:'post'})

@@ -5,7 +5,7 @@
       <div class="container">
         <div class="loginList">
           <p>京西欢迎您！</p>
-          <p>
+          <p v-show="sh">
             <span>请</span>
             <router-link to="/login">登陆</router-link>
             <router-link to="/register" class="register">免费注册</router-link>
@@ -56,6 +56,7 @@ export default {
   data() {
     return {
       keyword: "",
+      sh:true
     };
   },
   methods: {
