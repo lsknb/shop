@@ -163,7 +163,7 @@ export default {
     },
   },
   watch:{
-    $route(newValue,oldValue){
+    $route(){
       Object.assign(this.searchParams,this.$route.query,this.$route.params);
       this.getData();
       this.searchParams.category1Id="";

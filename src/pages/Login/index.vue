@@ -3,11 +3,8 @@
     <div class="box">
       <div class="left">
         <div class="left-tips">
-          <img src="./asset/img/logo.png" alt="" />
           <span>欢迎来到京西！</span>
-          <div class="canvas3d-box">
-            <canvas id="canvas3d"></canvas>
-          </div>
+          <img src="./asset/img/biubiubiu.gif"  />
         </div>
       </div>
       <div class="right">
@@ -35,11 +32,6 @@
 </template>
 
 <script>
-// import { Application } from './asset/runtime';
-// const canvas = document.getElementById('canvas3d')
-// const app = new Application(canvas);
-// app.load('./asset/scene.splinecode')
-
 export default {
   data() {
     return {
@@ -48,12 +40,12 @@ export default {
     };
   },
   methods: {
-    async userLogin() {
-      try {
+  userLogin() {
+     
         const { phone, password } = this;
-        await this.$store.dispatch("userLogin", { phone, password });
-          this.$router.push('/Home')
-      } catch (error) {}
+       this.$store.dispatch("userLogin", { phone, password });
+        // this.$router.push("/home");
+    
     },
   },
 };
@@ -65,6 +57,7 @@ export default {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
+
 
 .content {
   width: 100vw;
@@ -112,8 +105,8 @@ export default {
   font-weight: 100;
 }
 .content .box .left img {
-  width: 80px;
-  height: 80px;
+  width: 250px;
+  height: 250px;
   display: block;
   border-radius: 50%;
 }

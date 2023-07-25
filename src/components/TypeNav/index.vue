@@ -54,14 +54,14 @@
         </transition>
       </div>
       <nav class="nav">
-        <a href="###">服装城</a>
-        <a href="###">美妆馆</a>
-        <a href="###">京西超市</a>
-        <a href="###">全球购</a>
-        <a href="###">闪购</a>
-        <a href="###">团购</a>
-        <a href="###">有趣</a>
-        <a href="###">秒杀</a>
+        <a href="#">服装城</a>
+        <a href="#">美妆馆</a>
+        <a href="#">京西超市</a>
+        <a href="#">全球购</a>
+        <a href="#">闪购</a>
+        <a href="#">团购</a>
+        <a href="#">有趣</a>
+        <a href="#">秒杀</a>
       </nav>
     </div>
   </div>
@@ -97,7 +97,6 @@ export default {
     leaveIndex() {
       this.currentIndex = -1;
       if (this.$route.path != "/home") {
-
         this.show = false;
       }
     },
@@ -117,8 +116,8 @@ export default {
         } else {
           query.category3Id = category3id;
         }
-        if(this.$route.params){
-          location.pa=this.$route.params;
+        if (this.$route.params) {
+          location.pa = this.$route.params;
           location.query = query;
         }
 
@@ -258,8 +257,8 @@ export default {
       height: 461px;
     }
 
-    .sort-enter-active{
-      transition: all .5s linear;
+    .sort-enter-active {
+      transition: all 0.5s linear;
     }
   }
 }

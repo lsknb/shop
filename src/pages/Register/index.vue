@@ -25,10 +25,20 @@
               class="inputs"
               v-model="code"
             />
-            <input type="password" placeholder="密码" class="inputs" v-model="password" />
-            <input type="password" placeholder="确认密码" class="inputs" v-model="password1"/>
+            <input
+              type="password"
+              placeholder="密码"
+              class="inputs"
+              v-model="password"
+            />
+            <input
+              type="password"
+              placeholder="确认密码"
+              class="inputs"
+              v-model="password1"
+            />
 
-            <button class="btn" @click="getCode()">获取验证码</button>
+            <button class="btn" @click="getCode">获取验证码</button>
             <button class="btn" @click="userRegister">注册</button>
             <div class="tips"></div>
           </div>
@@ -44,8 +54,8 @@ export default {
     return {
       phone: "",
       code: "",
-      password:"",
-      password1:""
+      password: "",
+      password1: "",
     };
   },
   methods: {
@@ -58,16 +68,23 @@ export default {
         this.code = this.$store.state.user.code;
       } catch (error) {}
     },
-    async userRegister(){
+    async userRegister() {
       try {
-        const{phone,code,password,password1}=this;
-        console.log(phone,code,password);
-      (phone&&code&&password==password1)&&await this.$store.dispatch('userRegister',{phone,code,password})
-      this.$router.push('/Login')
+        const { phone, code, password, password1 } = this;
+        console.log(phone, code, password);
+        (phone &&
+          code &&
+          password == password1) &&
+          (await this.$store.dispatch("userRegister", {
+            phone,
+            code,
+            password,
+          }));
+        this.$router.push("/Login");
       } catch (error) {
-        
+        alert(error.message);
       }
-    }
+    },
   },
 };
 </script>

@@ -10,6 +10,7 @@ import Home from '@/pages/Home'
 import Login from '@/pages/Login'
 import Register from '@/pages/Register'
 import Search from '@/pages/Search'
+import Love from '@/pages/love'
 
 //暴露并配置路由
 export default new VueRouter({
@@ -35,6 +36,11 @@ export default new VueRouter({
             meta:{show:true},
             name:"search",
             props:($route)=>({keyword:$route.params.keyword,k:$route.query.k})
+        },
+        {
+            path:'/love',
+            component:Love,
+            meta:{show:true}
         },
         {
             path:'*',

@@ -123,8 +123,8 @@ watch:{
                         clickable:true,
                     },
                     navigation:{
-                        nextEL:".swiper-button-next",
-                        pervEL:".swiper-button-prev",
+                        nextEl:".swiper-button-next",
+                        pervEl:".swiper-button-prev",
                     },
                 });
             })

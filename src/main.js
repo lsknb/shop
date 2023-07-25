@@ -14,4 +14,3 @@ new Vue({
   router,
   store
 }).$mount('#app')
-// 123

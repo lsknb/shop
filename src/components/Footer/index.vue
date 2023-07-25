@@ -47,11 +47,11 @@
                     <div class="footerItem">
                         <h4>特色服务</h4>
                         <ul class="footerItemCon">
-                            <li>嘉俊热舞</li>
-                            <li>江彬装机</li>
-                            <li>冠群延保</li>
-                            <li>卓能办卡</li>
-                            <li>胜科通信</li>
+                            <li>夺宝岛</li>
+                            <li>DIY装机</li>
+                            <li>延保服务</li>
+                            <li>京西E卡</li>
+                            <li>京西通信</li>
                         </ul>
                     </div>
                     <div class="footerItem">

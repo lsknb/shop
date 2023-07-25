@@ -16,9 +16,13 @@ const actions = {
     },
     async userRegister({commit},user){
         let result=await reqUserRegister(user);
+
         if(result.code==201){
             return 'ok'
         }
+        else {
+           
+       }
     },
     async userLogin({commit},user){
         let result=await reqUserLogin(user);
